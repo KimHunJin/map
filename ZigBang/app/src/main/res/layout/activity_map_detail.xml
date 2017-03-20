@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_map_detail"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="dxmnd.com.zigbang.java.map.MapDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/img_marker_detail"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/btn_marker_detail_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/btn_dialog"
+            android:onClick="onClick"
+            android:text="닫기" />
+
+
+        <TextView
+            android:id="@+id/txt_marker_detail_info_date_holds_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorTranslucentDark"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/txt_marker_detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/txt_marker_detail_info_date_holds_score"
+            android:background="@color/colorTranslucentDark"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_marker_detail_price_floor_area_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorDark" />
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".java.map.MapActivity">
+
+    <include layout="@layout/content_map" />
+
+    <Button
+        android:id="@+id/btn_show_map_list"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/retangle_btn_solide_ok"
+        android:text="이 지역 목록보기"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:onClick="onClick"/>
+
+</RelativeLayout>
